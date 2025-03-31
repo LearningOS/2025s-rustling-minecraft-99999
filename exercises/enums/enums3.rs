@@ -8,7 +8,10 @@
 // I AM NOT DONE
 
 enum Message {
-    // TODO: implement the message variant types based on their usage below
+    ChangeColor(u8, u8, u8),
+    Quit,
+    Echo(String),
+    Move(&point),
 }
 
 struct Point {
