@@ -3,16 +3,11 @@
 // Execute `rustlings hint strings3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
-fn trim_me(input: &str) -> String {
+fn trim_me(inp: &str) -> String {
     // TODO: Remove whitespace from both ends of a string!
-    let chars = input.chars();
-    let mut cnt = 0;
-    for i in chars {
-    	cnt += 1;
-    	if i == Some(' ') && chars.nth(cnt-1) == Some(' ')
-    }
+    let mut a = inp;
+    String::from(a.trim())
 }
 
 fn compose_me(input: &str) -> String {

@@ -45,7 +45,6 @@ impl State {
         // variants
         // Remember: When passing a tuple as a function argument, you'll need
         // extra parentheses: fn function((t, u, p, l, e))
-<<<<<<< HEAD
         match message {
         	Message::ChangeColor(r, g, b) => {
         		self.color = (r, g, b);
@@ -60,10 +59,7 @@ impl State {
         		self.position = point;
         	}
         }
-=======
-        message::Echo(self.message);
-        message::ChangeColor();
->>>>>>> 11cc2aa1e5026d9ea4ac5d489895851d08985941
+        Message::Echo(self.message.clone());
     }
 }
 
